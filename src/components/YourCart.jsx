@@ -40,13 +40,6 @@ function YourCart() {
         <p className="total-price">${totalPrice.toFixed(2)}</p>
       </div>
       <div className="total-order">
-        <div className="delivery-wrapper">
-          <img src="./images/icon-carbon-neutral.svg" alt="" />
-          <p className="delivery-text">
-            This is a <span className="delivery-span">carbon-neutral</span>{" "}
-            delivery
-          </p>
-        </div>
         <button className="order-btn">Confirm Order</button>
       </div>
     </div>

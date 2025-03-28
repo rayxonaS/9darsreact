@@ -5,7 +5,13 @@ function Product({ t }) {
   const { id, image, title, stock, price } = t;
   const alreadyAdded = cart.find((t) => t.id === id);
   return (
-    <>
+    <div className="container">
+      <div className=" container technology-card-body">
+        <img className="technology-card-image" src={image} alt={title} />
+        <h3 className="technology-card-title">{title}</h3>
+        <p className="technology-card-price">${price}</p>
+        <p className="technology-card-stock">{stock}</p>
+      </div>
       <div className="buttons-wrapper">
         {!alreadyAdded && (
           <button
@@ -19,7 +25,7 @@ function Product({ t }) {
           >
             <span className="add-to-card-btn-wrapper">
               <img src="../images/icon-add-to-cart.svg" alt="" />
-              <span>Add to Cart</span>
+              <span>Order Now</span>
             </span>
           </button>
         )}
@@ -49,13 +55,7 @@ function Product({ t }) {
           </div>
         )}
       </div>
-      <div className=" container technology-card-body">
-        <img className="technology-card-image" src={image} alt={title} />
-        <h3 className="technology-card-title">{title}</h3>
-        <p className="technology-card-price">${price}</p>
-        <p className="technology-card-stock">{stock}</p>
-      </div>
-    </>
+    </div>
   );
 }
 export default Product;

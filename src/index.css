@@ -266,19 +266,24 @@ body {
 }
 
 .technology-card-title {
-  color: var(--color-rose-500);
-  font-size: var(--font-size-preset-4);
-  line-height: var(--line-height-preset-4);
-  font-weight: 400;
-  margin-top: 2rem;
-  margin-bottom: 4px;
+  color: #c7380f;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .technology-card-price {
-  font-size: var(--font-size-preset-3);
-  line-height: var(--line-height-preset-3);
-  color: var(--color-red);
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.technology-card-stock {
+  font-size: 2rem;
+  line-height: 1.2;
   font-weight: 600;
+  color: #c7380f;
 }
 
 .buttons-wrapper {
@@ -295,24 +300,19 @@ body {
 }
 
 .add-to-card-btn {
-  border: 2px solid var(--color-rose-400);
+  border: 2px solid chocolate;
   padding: 1.2rem 2.8rem;
   transition: 0.3s;
-  background-color: var(--color-white);
+  background-color: darksalmon;
 
   &:hover {
-    border-color: var(--color-red);
+    border-color: #000;
   }
 }
 
-.add-to-card-btn:hover .add-to-card-btn-wrapper {
-  color: var(--color-red);
-}
-
 .amount-title {
-  color: var(--color-white);
-  font-size: var(--font-size-preset-4);
-  line-height: var(--line-height-preset-4);
+  font-size: 1.8rem;
+  line-height: 1.2;
   font-weight: 600;
 }
 
@@ -331,12 +331,12 @@ body {
   cursor: pointer;
   padding: 1.2rem 2.8rem;
   gap: 2.5rem;
-  background-color: var(--color-red);
+  background-color: burlywood;
   border-radius: 999px;
   width: 100%;
   max-width: 160px;
   height: auto;
-  border: 1px solid var(--color-red);
+  border: 1px solid chocolate;
 }
 
 .decrement {
@@ -345,14 +345,13 @@ body {
   height: 20px;
   border-radius: 50%;
   border: 2px solid var(--color-white);
-  background-color: #c7380f;
-  color: #ffffff;
+  background-color: chocolate;
+  color: #000;
   font-weight: 600;
   cursor: pointer;
 
   &:hover {
-    background-color: var(--color-white);
-    color: var(--color-red);
+    background-color: #ffffff;
   }
 }
 
@@ -362,12 +361,60 @@ body {
   height: 20px;
   border-radius: 50%;
   border: 2px solid var(--color-white);
-  background-color: #c7380f;
-  color: #ffffff;
+  background-color: chocolate;
+  color: #000;
   cursor: pointer;
 
   &:hover {
-    background-color: var(--color-white);
-    color: var(--color-red);
+    background-color: #ffffff;
   }
+}
+
+.location-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  background-image: url("https://www.netstate.com/states/geography/mapcom/images/ny.gif");
+}
+
+.information {
+  padding: 2.4rem 1.2rem;
+  width: 300px;
+  height: 300px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contact-phone {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #c7380f;
+  margin-bottom: 1rem;
+}
+.contact-email {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #c7380f;
+  margin-bottom: 1rem;
+}
+.contact-address {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #c7380f;
+}
+
+.contact-span {
+  color: #000;
 }

@@ -190,7 +190,7 @@ body {
 
 .choice-container {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
   width: 100%;
   max-width: 1200px;
 }
@@ -371,7 +371,7 @@ body {
 }
 
 .location-container {
-  padding-top: 4rem;
+  padding-top: 6rem;
   padding-bottom: 4rem;
   width: 100%;
   max-width: 1200px;
@@ -417,4 +417,92 @@ body {
 
 .contact-span {
   color: #000;
+}
+
+.cart-wrapper {
+  width: 384px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 2.4rem;
+}
+
+.cart-title {
+  font-size: var(--font-size-preset-2);
+  line-height: var(--line-height-preset-2);
+  color: var(--color-red);
+  font-weight: 700;
+  margin-top: 2.4rem;
+}
+
+.wrapper-title {
+  font-size: var(--font-size-preset-4);
+  line-height: var(--line-height-preset-4);
+  color: var(--color-rose-900);
+  font-weight: 600;
+  margin-top: 2.4rem;
+}
+
+.item-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.item-amount {
+  font-size: var(--font-size-preset-4);
+  line-height: var(--line-height-preset-4);
+  color: var(--color-red);
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.item-price {
+  font-size: var(--font-size-preset-4);
+  line-height: var(--line-height-preset-4);
+  color: var(--color-rose-500);
+  font-weight: 400;
+  margin-top: 0.8rem;
+}
+
+.remove-btn {
+  margin-left: auto;
+  border-radius: 999px;
+  width: 18px;
+  height: 18px;
+  font-size: var(--font-size-preset-3);
+  padding: 3px;
+  color: var(--color-rose-900);
+  border: 1px solid var(--color-rose-900);
+
+  &:hover {
+    border-color: var(--color-rose-900);
+    color: var(--color-rose-900);
+  }
+}
+
+.total-wrapper {
+  display: flex;
+  gap: 18rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.total-text {
+  font-size: var(--font-size-preset-4);
+  line-height: var(--line-height-preset-4);
+  font-weight: 400;
+  color: var(--color-rose-900);
+}
+
+.total-price {
+  font-size: var(--font-size-preset-2);
+  line-height: var(--line-height-preset-2);
+  font-weight: 700;
+  color: var(--color-rose-900);
+}
+
+.total-order {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }

@@ -1,5 +1,6 @@
 import ProductList from "./components/ProductList";
 import { useFetch } from "./hooks/useFetch";
+import YourCart from "./components/YourCart";
 
 function App() {
   const {
@@ -12,6 +13,7 @@ function App() {
       {technology && (
         <ProductList technology={technology} isPending={isPending} />
       )}
+      <YourCart />
     </div>
   );
 }
